@@ -13,44 +13,58 @@ public class Category {
 	 * always initialized with the system date.
 	 */
 
-    public String getCategoryId() {
-        return null;
-    }
+	private String categoryId;
+	private String categoryName;
+	private String categoryDescription;
+	private String categoryCreatedBy;
+	private Date categoryCreationDate;
 
-    public void setCategoryId(String categoryId) {
-       
-    }
+	public String getCategoryId() {
+		return this.categoryId;
+	}
 
-    public String getCategoryName() {
-        return null;
-    }
+	public void setCategoryId(String categoryId) {
+		this.categoryId = categoryId;
+	}
 
-    public void setCategoryName(String categoryName) {
-        
-    }
+	public String getCategoryName() {
+		return this.categoryName;
+	}
 
-    public String getCategoryDescription() {
-        return null;
-    }
+	public void setCategoryName(String categoryName) {
+		this.categoryName = categoryName;
+	}
 
-    public void setCategoryDescription(String categoryDescription) {
-      
-    }
+	public String getCategoryDescription() {
+		return this.categoryDescription;
+	}
 
-    public String getCategoryCreatedBy() {
-        return null;
-    }
+	public void setCategoryDescription(String categoryDescription) {
+		this.categoryDescription = categoryDescription;
+	}
 
-    public void setCategoryCreatedBy(String categoryCreatedBy) {
-       
-    }
+	public String getCategoryCreatedBy() {
+		return this.categoryCreatedBy;
+	}
 
-    public Date getCategoryCreationDate() {
-        return null;
-    }
+	public void setCategoryCreatedBy(String categoryCreatedBy) {
+		this.categoryCreatedBy = categoryCreatedBy;
+	}
 
-    public void setCategoryCreationDate(Date categoryCreationDate) {
-      
-    }
+	public Date getCategoryCreationDate() {
+		return this.categoryCreationDate;
+	}
+
+	public void setCategoryCreationDate(Date categoryCreationDate) {
+		this.categoryCreationDate = categoryCreationDate;
+	}
+
+	@Override
+	public String toString() {
+		return new StringBuilder().append("Category [categoryId=").append(this.categoryId)
+				.append(", categoryCreationDate=").append(this.categoryCreationDate).append(", categoryCreatedBy=")
+				.append(this.categoryCreatedBy).append(", categoryDescription=").append(this.categoryDescription)
+				.append(", categoryName=").append(this.categoryName).append("]").toString();
+	}
 
 }
